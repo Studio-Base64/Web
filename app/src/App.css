@@ -5,6 +5,10 @@
   left: 120px;
 }
 
+body {
+  background-color: #bab78f !important;
+}
+
 .main-header {
   position: absolute;
   background-color: #04395e;
@@ -23,44 +27,88 @@
 .main-content {
   padding: 180px 40px;
   background-color: #bab78f;
-  border-bottom: 1px solid #aba8b5;
   font-family: PoetsenOne-Regular;
   font-size: 24px;
-  min-height: 70vh;
+  min-height: 120vh;
 }
 
 .inner-content {
   background-color: #f2f2f2;
   padding: 12px;
-  min-height: 70vh;
+  min-height: 180vh;
+  max-width: 1200px;
+  left: calc(25%);
+  position: absolute;
+}
+
+.hbar-logo {
+  position: absolute;
+  top: 22px;
+  left: calc(50% - 280px);
+  width: 80px;
+  z-index: 2;
 }
 
 .projects {
+  font-weight: bold;
   font-size: 58px;
   text-align: center;
   margin-bottom: 18px;
-  border: 1px solid rgb(211, 211, 211);
   border-radius: 4px;
-  padding: 10px;
+  padding: 16px;
+  padding-bottom: 8px;
 }
 
-.hash-orbs {
-  width: 256px;
+.wallet-address {
+  color: #36548f;
 }
 
-.project-container {
-  box-shadow: #414141 0px 0px 1px;
-  transition: all 0.18s ease;
-  padding: 10px;
+.notice {
   text-align: center;
 }
 
-.project-container:hover {
-  box-shadow: #414141 0px 0px 8px;
-  margin-top: -8px;
+.email-text {
+  color: #f25f5c;
 }
 
-.project-container img {
-  padding: none;
-  width: calc(100%);
+@media only screen and (max-width: 1800px) {
+  .inner-content {
+    left: calc(10%);
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .inner-content {
+    left: 0;
+    width: 100%;
+    max-width: none;
+    border-top: 5px solid rgb(0, 0, 0);
+    margin-top: -50px;
+    z-index: 1;
+  }
+
+  .Base64-logo {
+    z-index: 2;
+  }
+
+  .hbar-logo {
+    top: 22px;
+    width: 80px;
+    border: 1px solid red;
+    left: calc(25% - 75px);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .Base64-logo {
+    left: calc(50% - 150px);
+  }
+  .studio-text {
+    opacity: 0;
+  }
+
+  .projects {
+    text-align: left;
+    margin-left: 120px;
+  }
 }

@@ -4,11 +4,15 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta property="og:title" content="Studio Base64" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://studiobase64.com/" />
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1465019412906483718/-TZhr56m_400x400.jpg" />
+    <meta property="og:description" content="Studio Base64 is an organization that creates and distributes NFTs on the Hedera Hashgraph ledger." />
+    <meta name="theme-color" content="#04395e">
+
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,7 +28,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>HBAR NFTs</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +43,23 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!--<script>
+      var figure = document.querySelectorAll(".project-container");
+      var vid = figure.find("video");
+
+      [].forEach.call(figure, function (item,index) {
+          item.addEventListener('mouseover', hoverVideo.bind(item,index), false);
+          item.addEventListener('mouseout', hideVideo.bind(item,index), false);
+      });
+
+      function hoverVideo(index, e) {
+          vid[index].play(); 
+      }
+
+      function hideVideo(index, e) {
+          vid[index].pause(); 
+      }
+    </script>-->
   </body>
 </html>
